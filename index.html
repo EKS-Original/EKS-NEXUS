@@ -1,18 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  GraduationCap, 
-  Gamepad2, 
-  Briefcase, 
-  Gift, 
-  Home, 
-  Compass, 
-  PlusCircle, 
-  MessageSquare, 
-…          </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKS NEXUS</title>
+  
+  <!-- 1. React & ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- 2. Babel (JSX ကို Browser မှာ တန်း run ပေးရန်) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- 3. Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- 4. Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-neutral-950 text-white">
 
-        </nav>
+  <!-- React App ပေါ်မည့် Root Div -->
+  <div id="root"></div>
 
-      </div>
-    </div>
-  );
-}
+  <!-- 5. type="text/babel" မဖြစ်မနေ ထည့်ပေးရပါမည် -->
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function App() {
+      return (
+        <div class="min-h-screen p-6 flex flex-col items-center justify-center">
+          <h1 class="text-2xl font-bold text-emerald-400">EKS NEXUS</h1>
+          <p class="text-gray-400 mt-2">Platform Successfully Loaded!</p>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
